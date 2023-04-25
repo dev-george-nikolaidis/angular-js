@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.js"></script>
+    <script src="./app.js"></script>
+    <script src="./src/services/test.service.js"></script>
+    <script src="./src/controllers/emp.controller.js"></script>
+    <script src="./src/controllers/test.controller.js"></script>
+    <script src="router.js"></script>
+    <title>Document</title>
+
+    <style>
+        a {
+            margin-right: 2rem;
+            background-color: #7b5252;
+            color: aliceblue;
+            padding: 1rem 1.3rem;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #9f7878;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+
+
+    <ui-view></ui-view>
+    <a ui-sref="home">Home</a>
+    <a ui-sref="test">Test</a>
+</body>
+
+</html>
